@@ -19,7 +19,7 @@ from xgboost import XGBClassifier
 from preprocess import engineer_longitudinal_features
 
 # ── Step 1: Load & Clean ──────────────────────────────────────────────────────
-df = pd.read_csv('../oasis_longitudinal.csv')
+df = pd.read_csv('../data/oasis_longitudinal.csv')
 
 df = df.drop(columns=['Hand', 'MRI ID'])
 df['MR Delay (Years)'] = df['MR Delay'] / 365.25

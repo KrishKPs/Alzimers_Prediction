@@ -26,3 +26,11 @@ dist/
 
 # Trained model (regenerate via src)
 *.pkl
+
+# AI assistant notes (local only)
+CLAUDE.md
+**/CLAUDE.md
+**/[Ff]rontend.md
+SKILL.md
+.claude/
+*.tsbuildinfo

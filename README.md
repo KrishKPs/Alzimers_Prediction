@@ -4,7 +4,7 @@ Classical machine learning (no deep learning) that predicts whether a patient is
 
 ## Data
 
-[OASIS-2 longitudinal](https://www.oasis-brains.org/) (`oasis_longitudinal.csv`): 150 subjects, multiple visits each. Features include age, education, SES, MMSE, CDR, eTIV, nWBV and ASF.
+[OASIS-2 longitudinal](https://www.oasis-brains.org/) (`data/oasis_longitudinal.csv`): 150 subjects, multiple visits each. Features include age, education, SES, MMSE, CDR, eTIV, nWBV and ASF.
 
 ## Pipeline (`src/pipeline.py`)
 
@@ -27,7 +27,7 @@ python pipeline.py        # trains, saves outputs/model.pkl and SHAP plots
 streamlit run app.py      # risk dashboard with PDF report export
 ```
 
-`pipeline.py` uses paths relative to `src/`, so run it from there. `Analysis/data_analysis.ipynb` has the exploratory analysis.
+`pipeline.py` uses paths relative to `src/`, so run it from there. `notebooks/data_analysis.ipynb` has the exploratory analysis.
 
 ## Stack
 
